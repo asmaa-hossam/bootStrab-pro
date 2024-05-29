@@ -1,0 +1,102 @@
+body{
+    height: 6000px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#linear{
+    background: linear-gradient(to bottom , red ,blue );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ho:hover{
+    background-color: rgb(92, 43, 226) !important;
+}
+
+#caption{
+    bottom: 5rem;
+    padding: 20px;
+}
+.icons{
+    top: 100px;
+    right: 0;
+}
+#im1{
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#cardimg{
+    position: relative;
+}
+#cardimg::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+transition: 1s;
+opacity: 0;
+background-color: rgb(0, 132, 255);
+}
+#cardimg:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#cardimg::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+transition: 1s;
+opacity: 0;
+background-color: rgb(0, 183, 255);
+}
+#cardimg:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+#immage{
+    background-image: url(../img/im8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.pers1{
+   background-image: url(../img/B612_20200607_184531_875.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.pers2{
+    background-image: url(../img/B612_20200308_194700_271.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .pers3{
+    background-image: url(../img/B612_20200320_144739_482.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .per:hover{
+transform: scale(0.75);
+transition: 1s;
+ }
+ .carte:hover .line{
+    width: 13% !important;
+ }
+ #di1:hover{
+    background-color: gray !important;
+ }
+ .carte{
+    box-shadow: 1px 1px 7px 5px rgb(241, 118, 155);
+ }
+ .yy:hover{
+    color: black !important;
+ }
